@@ -1,32 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@800&display=swap');
+
+body {
+    background-image: url("https://source.unsplash.com/Z2EgLCJob40");
+			background-size: cover;
+            background-repeat: no-repeat;
+			background-attachment: scroll;
+            background-position: 50% 70%;
+    font-family: 'Unbounded', cursive !important;
+    color: white !important;
+}
+
+a {
+    color: white !important;
+}
+
+li > a {
+    color: black !important;
+}
+
+canvas {
+    position: absolute;
+}
+
 .hero {
     display: grid;
     align-items: center;
+    justify-content: start;
     height: 100vh;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(autofill, minmax(min-content, 1fr));
+    grid-template-rows: repeat(autofill, minmax(min-content, 1fr));
     font-size: 2rem;
 }
 
+.dropdownStyles {
+    padding-right: 1%;
+}
+
 .one {
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
-    justify-self: center;
+    justify-self: start;
+    padding-left: 5%;
 }
 
 .two {
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
-    justify-self: center;
+    justify-self: start;
+    padding-left: 5%;
 }
 
 .three {
-    grid-column: 2 / 3;
-    grid-row: 3 / 4;
-    justify-self: center;
+    justify-self: start;
+    padding-left: 5%;
 }
 
 .four {
-    grid-column: 2 / 3;
-    grid-row: 4 / 5;
-    justify-self: center;
+    justify-self: start;
+}
+
+.footerText {
+    display: flex;
+    justify-content: center;
+    opacity: 0.2;
 }
