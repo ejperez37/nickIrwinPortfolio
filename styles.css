@@ -32,10 +32,6 @@ canvas {
     font-size: 2rem;
 }
 
-.dropdownStyles {
-    padding-right: 1%;
-}
-
 .one {
     justify-self: start;
     padding-left: 5%;
