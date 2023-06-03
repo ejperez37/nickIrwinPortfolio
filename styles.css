@@ -1,25 +1,40 @@
-@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@800&display=swap');
+@font-face {
+    font-family: 'akiraEx';
+    src: url(fonts/akira_expanded/AkiraExpandedDemo.ttf);
+}
 
 body {
-    background-image: url("https://source.unsplash.com/Z2EgLCJob40");
-			background-size: cover;
-            background-repeat: no-repeat;
-			background-attachment: scroll;
-            background-position: 50% 70%;
-    font-family: 'Unbounded', cursive !important;
-    color: white !important;
+    font-family: 'akiraEx', sans-serif !important;
+    background-color: #171010 !important;
+    box-sizing: border-box;
 }
 
-a {
-    color: white !important;
+li a {
+    color: #423F3E;
 }
 
-li > a {
-    color: black !important;
+div > a {
+    color: rgba(203, 199, 199, 0.819);
+}
+
+p a {
+    color: rgba(203, 199, 199, 0.819);
+}
+
+p {
+    color: #423F3E;
 }
 
 canvas {
     position: absolute;
+}
+
+nav {
+    position: fixed;
+}
+
+.navbarStyle {
+    background-color: #423F3E;
 }
 
 .hero {
@@ -32,17 +47,7 @@ canvas {
     font-size: 2rem;
 }
 
-.one {
-    justify-self: start;
-    padding-left: 5%;
-}
-
-.two {
-    justify-self: start;
-    padding-left: 5%;
-}
-
-.three {
+.one, .two, .three {
     justify-self: start;
     padding-left: 5%;
 }
@@ -54,5 +59,6 @@ canvas {
 .footerText {
     display: flex;
     justify-content: center;
-    opacity: 0.2;
+    opacity: 0.1;
+    color: rgba(203, 199, 199, 0.819);
 }
