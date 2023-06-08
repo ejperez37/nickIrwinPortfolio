@@ -40,7 +40,7 @@ nav {
 }
 
 .heroAndCarousel > * {
-    flex: 0 1 50%;
+    flex: 1 1 50%;
     padding-inline: 5%;
     padding-block: 3%;
     align-self: center;
