@@ -25,10 +25,6 @@ p {
     color: #423F3E;
 }
 
-canvas {
-    position: absolute;
-}
-
 nav {
     position: fixed;
 }
@@ -37,23 +33,36 @@ nav {
     background-color: #423F3E;
 }
 
+.heroAndCarousel {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.heroAndCarousel > * {
+    flex: 0 1 50%;
+    padding-inline: 5%;
+    padding-block: 3%;
+    align-self: center;
+}
+
 .hero {
-    display: grid;
-    align-items: center;
-    justify-content: start;
-    height: 100vh;
-    grid-template-columns: repeat(autofill, minmax(min-content, 1fr));
-    grid-template-rows: repeat(autofill, minmax(min-content, 1fr));
-    font-size: 2rem;
+    position: relative;
+    inline-size: 50%;
+    block-size: 100dvh;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
+    font-size: 1.5ch;
+    flex-wrap: nowrap;
 }
 
-.one, .two, .three {
-    justify-self: start;
-    padding-left: 5%;
-}
-
-.four {
-    justify-self: start;
+#carouselFade .carousel-item img{
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
 }
 
 .footerText {
